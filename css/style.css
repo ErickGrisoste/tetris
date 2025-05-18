@@ -9,6 +9,10 @@ body {
     overflow: hidden;
 }
 
+html {
+    overflow: hidden;
+}
+
 canvas {
     background: #222;
     box-shadow: 0 0 20px #0ff;
