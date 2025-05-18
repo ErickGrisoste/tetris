@@ -6,6 +6,7 @@ body {
     height: 100vh;
     color: #fff;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 canvas {
