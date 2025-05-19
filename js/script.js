@@ -45,7 +45,7 @@ const matrix = [
     ],
     [
         [0, 0, 0],
-        [1, 0, 0], //faz o L deitado
+        [0, 0, 1], //faz o L deitado
         [1, 1, 1],
     ]
 ];
@@ -179,15 +179,15 @@ function draw() {
     context.fillStyle = '#000';
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    drawMatrix(arena, { x: 0, y: 0 }, true); // arena com colorMap
-    drawMatrix(player.matrix[numPeca], player.pos);   // player com cor atual
+    drawMatrix(arena, { x: 0, y: 0 }, true); 
+    drawMatrix(player.matrix[numPeca], player.pos);  
 
     document.getElementById('score').innerText = 'Score: ' + score;
 }
 
 let andar = 1;
 function aumentaVelocidade(){
-   dropInterval = dropInterval/1.1;
+   dropInterval = dropInterval/1.2;
 }
 
 let dropCounter = 0;
